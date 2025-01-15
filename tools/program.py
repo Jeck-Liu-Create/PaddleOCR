@@ -489,6 +489,8 @@ def eval(model,
     with paddle.no_grad():
         total_frame = 0.0
         total_time = 0.0
+        total_time = max(total_time, 1e-5)  # 设置最小时间为 0.00001 秒
+
         pbar = tqdm(
             total=len(valid_dataloader),
             desc='eval model:',

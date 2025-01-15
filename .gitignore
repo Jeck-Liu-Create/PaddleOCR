@@ -32,3 +32,8 @@ paddleocr.egg-info/
 /deploy/android_demo/app/cache/
 test_tipc/web/models/
 test_tipc/web/node_modules/
+
+cpp_infer/
+det_r50_vd_db_v2.0_train/
+det_r50_db++_td_tr_train/
+pretrain_models/

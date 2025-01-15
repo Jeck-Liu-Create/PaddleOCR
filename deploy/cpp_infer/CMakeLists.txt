@@ -41,6 +41,7 @@ endif()
 if (WIN32)
   include_directories("${PADDLE_LIB}/paddle/include")
   link_directories("${PADDLE_LIB}/paddle/lib")
+  set(OpenCV_DIR "D:/nvidia/opencv/build")
   find_package(OpenCV REQUIRED PATHS ${OPENCV_DIR}/build/ NO_DEFAULT_PATH)
 
 else ()
